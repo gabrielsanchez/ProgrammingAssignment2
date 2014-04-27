@@ -1,6 +1,8 @@
-
+##import library for inverse operation
+##http://stat.ethz.ch/R-manual/R-patched/library/MASS/html/ginv.html
 library(MASS)
 
+##set/get values of matrix and its inverse
 makeCacheMatrix <- function(x = matrix()) {
 
   i <- NULL
@@ -18,6 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
        getinverse = getinverse)
 }
 
+##calculate the inverse of the special matrix
 cacheSolve <- function(x, ...) {
   
   i <- x$getinverse()
